@@ -1,3 +1,14 @@
+Find Middle: Advance fast by 2 steps and slow by 1 step until fast reaches the end; slow lands at the midpoint.
+
+Reverse Second Half: Reverse the pointers in-place starting from slow to the end of the list.
+
+Compare Halves: Advance two pointers simultaneously—one from head and one from the reversed tail—and compare node values.
+
+Return Result: Return true if all values match; return false if any mismatch occurs.
+
+
+
+
 class Solution {
 public:
     bool isPalindrome(ListNode* head) {
