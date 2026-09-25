@@ -1,3 +1,12 @@
+Initialize Pointers: Set odd to the 1st node (head), even to the 2nd node (head->next), and save evenHead to reconnect later.
+
+Separate Odd and Even Nodes: Traverse the list using even and even->next; point odd->next to the next odd node and even->next to the next even node, then advance both.
+
+Join Chains: Connect the tail of the odd chain (odd->next) to the saved head of the even chain (evenHead).
+
+Return Result: Return head, which now points to the newly reordered list.
+
+
 class Solution {
 public:
     ListNode* oddEvenList(ListNode* head) {
